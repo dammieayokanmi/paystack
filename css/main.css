@@ -16,6 +16,9 @@ ins{
 .fa-caret-down:before {
   content: close-quote !important;
 }
+.c-nav--mobile-only{
+  display: none;
+}
 a {
   text-decoration: none;
   color: #011b33;
@@ -36,7 +39,7 @@ li {
 a {
   color: inherit;
   text-decoration: none;
-  transition: color 0.3s ease 0s;
+  transition: co=lor 0.3s ease 0s;
 }
 .l-section--blue button--primary.c-button--link:hover, .l-section--blue .c-button--primary.c-button--link:hover {
   color: #01203d;

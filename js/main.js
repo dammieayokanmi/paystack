@@ -114,3 +114,12 @@ document.getElementById('brazil').onmouseout = function(){
 // document.getElementById('norway').onmouseout = function(){
 //     document.getElementById('js-homepage-animation-tooltip').style.transform = '';
 // }
+
+function myFunction() {
+    var x = document.getElementsByClassName("c-nav__body--parent");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
