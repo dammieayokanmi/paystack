@@ -320,7 +320,58 @@
         </nav>
       </header>
 
-      <div class="c-nav c-nav--mobile-only c-nav--green">
+
+      <div class="c-nav c-nav--mobile-only c-nav--green c-nav--is-opened">
+      <header class="header ">
+        <a href="" class="logo logoo"><img src="images/logo.png" alt=""></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu c-nav--green">
+          <li class="c-nav-menu__item js-nav-has-children" id="why-paystack">
+            <a href="#" style="padding-top: 20px;">
+                Why Paystack
+            </a>
+        </li>
+        <li class="c-nav-menu__item">
+            <a href="/wall-of-love">
+                Customers
+            </a>
+        </li>
+        <li class="c-nav-menu__item">
+            <a href="/pricing">
+                Pricing
+            </a>
+        </li>
+        <li class="c-nav-menu__item js-nav-has-children" id="learn">
+            <a href="#">
+                Learn
+            </a>
+        </li>
+        <li class="c-nav-menu__item js-nav-has-children" id="developers">
+            <a href="#">
+                Developers
+            </a>
+        </li>
+        <li class="c-nav-menu__item js-nav-has-children" id="support">
+            <a href="#">
+                Support
+            </a>
+        </li>
+        <li class="c-nav-menu__item c-nav-menu__item--cta">
+            <a class="u-text--secondary" href="https://dashboard.paystack.com/#/login">
+                Login
+            </a>
+        </li>
+        <li class="c-nav-menu__item c-nav-menu__item--cta">
+            <a class="c-button c-button--primary u-text-center c-button--full-width c-button--lg" href="https://dashboard.paystack.com/#/signup" data-track="" data-track-section="Nav">
+                Create free account
+            </a>
+        </li>
+          
+        </ul>
+      </header>
+    </div>
+      <!-- <div class="c-nav c-nav--mobile-only c-nav--green">
         <div class="c-nav__header">
             <div class="c-nav--left flex">
                 <a href="images/logo.png" class="c-nav__logo">
@@ -450,7 +501,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
       <section class="after-header">
         <div class="container">
@@ -1231,7 +1282,7 @@ left: 700.375px;"
                   </div>
                 </div>
               </div>
-
+              <script src="https://www.youtube.com/iframe_api"></script>
               <div class="hero-video flex">
                 <div>
                   <p>
@@ -1254,6 +1305,7 @@ left: 700.375px;"
                     </svg>
                   </button>
                 </div>
+
                 <div class="c-hero__button u-mobile-only" style="display: none">
                   <button type="button" class="c-button--play c-button--reset">
                     <svg
@@ -1271,13 +1323,14 @@ left: 700.375px;"
                   </button>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
       </section>
 
       <section
-        class="l-section l-section--pad-top l-section--pad-bottom l-section--white"
+        class="l-section l-section--pad-top l-section--pad-bottom l-section--white no-pad"
       >
         <div class="l-container">
           <div class="gridy grid">

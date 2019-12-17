@@ -32,6 +32,7 @@ document.getElementById('egypt').onmouseout = function(){
 
 }
 
+
 // nigeria
 document.getElementById('nigeria').onmouseover = function(){
     document.getElementById('js-homepage-animation-tooltip3').style.opacity = '1';
@@ -123,3 +124,40 @@ function myFunction() {
       x.style.display = "block";
     }
   }
+
+
+//   fullscrreen video
+var player, iframe;
+var $ = document.querySelector.bind(document);
+
+// init player
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '200',
+    width: '300',
+    videoId: 'dQw4w9WgXcQ',
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+}
+
+// when ready, wait for clicks
+function onPlayerReady(event) {
+  var player = event.target;
+  iframe = $('#player');
+  setupListener(); 
+}
+
+function setupListener (){
+$('button').addEventListener('click', playVideo);
+}
+
+function playVideo (){
+  player.playVideo();//won't work on mobile
+  
+  var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+  if (requestFullScreen) {
+    requestFullScreen.bind(iframe)();
+  }
+}
