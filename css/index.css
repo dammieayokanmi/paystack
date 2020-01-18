@@ -748,6 +748,20 @@ button--primary.c-button--link:hover, .c-button--primary.c-button--link:hover {
 .l-container--lg {
   max-width: 1240px;
 }
+/* .drop2:before {
+  display: none;
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(0);
+  border-style: solid;
+  border-width: 3px 0 3px 5.2px;
+  border-color: transparent transparent transparent #011b33;
+  transition: ease-in-out 0.1s transform;
+} */
 .c-footer__row {
   margin-bottom: 48px;
   align-items: flex-start;
@@ -782,6 +796,11 @@ button--primary.c-button--link:hover, .c-button--primary.c-button--link:hover {
   padding-top: 48px;
   margin-bottom: 0;
   border-top: 1px solid rgba(240,242,243,0.85);
+}
+.foot-group label{
+  display: flex;
+  align-items: center;
+  justify-content: space-betwee;
 }
 .c-footer-list__item--lowercase {
   text-transform: lowercase;

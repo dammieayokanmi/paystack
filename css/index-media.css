@@ -161,10 +161,14 @@ border: none;
 
         margin: 0;
         padding: 0;
+        padding-right: 16px;
         list-style: none;
         overflow: hidden;
       }
-      
+      .btn-pad {
+        padding:  0 20px !important;
+        text-align: center;
+      }
       .header li a {
         display: block;
         padding: 0 0 0 20px;
@@ -174,13 +178,24 @@ border: none;
         font-size: 15px;
         font-weight: bold;
       }
-      .header li a:hover{
+      .header li .list:hover{
         color: #0ba4db;
   transition: 0.2s;
   border-color: #0ba4db transparent transparent transparent;
 
       }
-      
+      /* header li .c-button--lg {
+        width: 100%;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+      }
+      header li .c-button--lg:hover{
+        background-color: #41aa5e !important;
+  transform: translate(0, -1px) !important;
+  box-shadow: 0 6px 2px -6px rgba(42, 134, 68, 0.6) !important;
+      }
+       */
       
       
       .header img {
@@ -259,7 +274,7 @@ border: none;
       }
       
       .header .menu-btn:checked ~ .menu {
-        max-height: 240px;
+        max-height: 350px;
       }
       
       .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -278,6 +293,7 @@ border: none;
       .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
         top: 0;
       }
+    
     }
       /* 48em = 768px */
       
@@ -301,6 +317,17 @@ border: none;
       .c-logo-row{
         flex-wrap: wrap;
       }
+      }
+      @media (max-width: 818px){
+        .c-footer__group h4, .lastly h4{
+          font-size: 15px;
+        }
+        .c-footer__group a, .lastly a{
+          font-size: 13px;
+        }
+        .c-footer-list--social .c-footer-list__item {
+          padding-right: 10px;
+        }
       }
       @media (max-width: 763px){
       .learn, .c-testimonial-block{
@@ -337,7 +364,16 @@ border: none;
         } */
       }
 
-
+      @media (max-width: 694px){
+                .c-footer__column {
+                  flex: 0 1 100%;
+                }
+      }
+      @media (max-width: 648px) and (min-width: 600px){
+        .lastly{
+          padding: 0 10px;
+        }
+      }
       @media (max-width: 600px){
         .c-footer__row:last-child{
           display: block;
@@ -425,7 +461,87 @@ border: none;
         }
       }
 
-      
+      @media (max-width: 556px){
+        .last-list{
+          display: nne;
+        }
+      }
+      @media (max-width: 550px){
+        .c-footer__column {
+          padding: 0 0 0 16px;
+      }
 
+      @media (max-width: 486px){
+        .c-footer__row {
+          display: block;
+        }
+        .group-one, .group-two{
+          display: none;
+        }
+       /*hide the inputs/checkmarks and submenu*/
+.foot-group input,section.submenu{
+  display: none ;
+}
+.foot-group .foot-menu{
+  position: sticky;
+}
+.foot-group .address{
+  justify-content: center;
+}
+.foot-menu{
+  /* position: fixed; */
+  left: 0;
+  top: 100px;
+  width: 100%;
+  clear: both;
+  display: none;
+	/* max-height: 0; */
+	transition: max-height .2s ease-out;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  /* position: absolute;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100000; */
+}
+.menu-btn2:checked ~ .foot-menu,.menu-btn1:checked ~ .foot-menu,.menu-btn3:checked ~ .foot-menu,
+.menu-btn4:checked ~ .foot-menu,.menu-btn5:checked ~ .foot-menu,
+.menu-btn6:checked ~ .foot-menu,.menu-btn7:checked ~ .foot-menu,.menu-btn8:checked ~ .foot-menu{
+  max-height: 500px;
+  display: block;
+  }
+  .c-footer__column {
+    margin-bottom: 0px;
+  }
+/* section .foot-menu{
+	/* clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out; */
+  */
+/* position the label
+.dropy {
+  position: relative;
+  display: block;
+  cursor: pointer;
+} */
+
+/*show the foot-menu when input is checked*/
+input:checked~section.foot-menu {
+  display: block;
+  transition:display ease-out .3s;
+
+}
+.foot-menu{
+  color: #fff;
+}
+.c-footer__row:last-child{
+  padding-bottom: 20px;
+}
+/* }
+.navbarr~input:checked{
+  height: 400px;
+} */
+      }
+    }
 
 
