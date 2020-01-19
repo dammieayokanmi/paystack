@@ -1,10 +1,14 @@
-// changebackground on scroll
+// slide toggle
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("main").style.marginLeft = "100%";
+  // document.getElementById("slideMenu").style.visibility = "visible";
+  // document.getElementById("slideMenu").style.maxHeight = "350px";
 
-const [red, green, blue] = [69, 111, 225]
-const navContent = document.querySelector('.navContent')
 
-window.addEventListener('scroll', () => {
-  const y = 1 + (window.scrollY || window.pageYOffset) / 150
-  const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
-  navContent.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
-})
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}

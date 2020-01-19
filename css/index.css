@@ -799,8 +799,14 @@ button--primary.c-button--link:hover, .c-button--primary.c-button--link:hover {
 }
 .foot-group label{
   display: flex;
-  align-items: center;
-  justify-content: space-betwee;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.foot-group input{
+  display: none;
+}
+.foot-group i{
+  display: none;
 }
 .c-footer-list__item--lowercase {
   text-transform: lowercase;
