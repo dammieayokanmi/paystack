@@ -119,6 +119,7 @@ border: none;
         margin-right: 15px;
     }
 
+
 }
 
 
@@ -131,6 +132,9 @@ border: none;
 @media (max-width: 1021px){
     #desktop{
         display: none;
+    }
+    #mySidenav{
+      display: block;
     }
     
     .c-nav--mobile-only{
@@ -315,8 +319,11 @@ input:checked~section.slide-menu {
       
       .header .menu-btn:checked ~ .menu {
         max-height: 350px;
+        overflow: scroll;
       }
-      
+      /* .header .menu-btn:checked ~ .menu {
+    max-height: 500px
+      } */
       .header .menu-btn:checked ~ .menu-icon .navicon {
         background: transparent;
       }
@@ -518,6 +525,9 @@ input:checked~section.slide-menu {
         .group-one, .group-two{
           display: none;
         }
+        .no-pad{
+          padding: 0;
+        }
         .foot-group h4{
           margin-bottom: 0;
         }
@@ -525,7 +535,7 @@ input:checked~section.slide-menu {
           display: inline;
         }
        /*hide the inputs/checkmarks and submenu*/
-.foot-group input,section.submenu, #menu-btn_slide{
+.foot-group input,.top-group input,section.submenu, #menu-btn_slide{
   display: none ;
 }
 .foot-group .foot-menu{
@@ -590,5 +600,17 @@ input:checked~section.foot-menu,input:checked~section.slide-menu {
 } */
       }
     }
-
+    @media (max-width: 400px){
+.overflow .c-button.c-button--link{
+  font-size: 12px;
+}
+    }
+    @media (max-width: 392px){
+      .overflow{
+      /* min-width: 250px;
+      max-width: 320px */
+      overflow: hidden;
+      display: contents;
+      }
+    }
 

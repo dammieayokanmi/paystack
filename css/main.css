@@ -28,7 +28,7 @@ ins{
 .c-nav--mobile-only{
   display: none;
 }
-.c-nav.c-nav--mobile-only .c-nav-menu__item a[href="#"]:before {
+/* .listy:before {
   content: "";
   position: absolute;
   right: 0;
@@ -40,7 +40,7 @@ ins{
   border-width: 3px 0 3px 5.2px;
   border-color: transparent transparent transparent #5c6a6e;
   transition: ease-in-out 0.1s transform
-}
+} */
 
 
 a {

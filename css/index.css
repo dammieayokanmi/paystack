@@ -6,6 +6,115 @@
 .after-header, .hero-footer{
     background: #F1FEF4;
 }
+#main a{
+  font-size: 13.92px;
+
+  margin-bottom: 7px;
+}
+#main .first{
+  font-size: 9.28px;
+}
+#mySidenav,.top-group input,.top-menu{
+  display: none;
+}
+/*hide the inputs/checkmarks and submenu*/
+.primary-btn2 input,section.submenu ,.primary-btn3 input{
+  display: none ;
+}
+.hamburger .submenu{
+  position: sticky;
+}
+.hamburger .address{
+  justify-content: center;
+}
+.submenu{
+  position: fixed;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  clear: both;
+	/* max-height: 0; */
+	transition: max-height .2s ease-out;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* position: absolute;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100000; */
+}
+.menu-btn2:checked ~ .submenu,.menu-btn3:checked ~ .submenu{
+  max-height: 500px;
+  display: block;
+  }
+  
+/* section .submenu{
+	/* clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out; */
+  */
+/* position the label
+.dropy {
+  position: relative;
+  display: block;
+  cursor: pointer;
+} */
+
+/*show the submenu when input is checked*/
+input:checked~section.submenu {
+  display: block;
+  transition:display ease-out .3s;
+
+}
+.submenu{
+  color: #fff;
+}
+/* }
+.navbarr~input:checked{
+  height: 400px;
+} */
+.top-menu{
+  position: fixed;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  clear: both;
+  max-height: 0;
+  position: sticky;
+  transition: max-height .2s ease-out;
+  margin: 15px 0 0 0;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  
+}
+.top-group i{
+  margin-top: -8px;
+}
+.top-menu .first{
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.menu-btn-top:checked ~ .top-menu,.menu-btn-top1:checked ~ .top-menu,
+.menu-btn-top2:checked ~ .top-menu,.menu-btn-top3:checked ~ .top-menu{
+  max-height: 500px;
+  display: block;
+  }
+  /* .menu-btn-top:checked ~ .listy:before{
+    display: none;
+  } */
+  .menu-btn-top1:checked ~ .top-menu2{
+    max-height: 500px;
+  }
+  
+
+/*show the submenu when input is checked*/
+input:checked~div.top-menu {
+  display: block;
+  transition:display ease-out .3s;
+
+}
+
 /* max-width: 1240px;
 }
 <style>
@@ -800,6 +909,11 @@ button--primary.c-button--link:hover, .c-button--primary.c-button--link:hover {
 .foot-group label{
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
+}
+ .top-group label{
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .foot-group input{
