@@ -475,6 +475,8 @@ border: none;
         .c-footer__row {
           display: block;
         }
+        .foot-group h4 {
+          margin-bottom: 0;
         .group-one, .group-two{
           display: none;
         }
